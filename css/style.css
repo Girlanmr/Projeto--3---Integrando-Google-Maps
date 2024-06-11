@@ -75,15 +75,16 @@ nav.mobile-menu ul li a{
 }
 
 header .logo{
+	position: relative;
+	top:-10px;
 	float: left;
 	width: 160px;
-	position: relative;
-	top: -5px;
 	height: 40px;
-	background-image: url(../imagens/logo.png);
+	background-image: url('../imagens/logo-danki.png');
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
+	background-color: transparent;
 }
 
 header nav.desktop-menu ul{
@@ -229,7 +230,7 @@ section.sessao1 .container{
 .wraper-part1{
 	max-width: 600px;
 	float: right;
-	padding: 0 30px;
+	padding:0 30px;
 }
 
 .part1 h2{
@@ -284,10 +285,10 @@ section.sessao1 .container{
 	float: left;
 	width: 40px;
 	height:40px;
-	background-image: url(../imagens/D.jpg);
+	background-image: url('../imagens/actor1.png');
 	background-size: 100% 100%;
 	border-radius: 20px;
-	background-color: gray;
+	background-color: transparent;
 }
 
 .texto-autor{
@@ -317,104 +318,124 @@ section.sessao1 .container{
 	border-radius: 8px;
 	background-color: rgb(200,200,200);
 }
-.sessao4{
+
+/* Aqui estou começando a sessão de número 4! */
+
+section.sessao4{
 	background-color: #472563;
-	padding: 100px 0;
+	padding:100px 0;
 }
+
 .form{
-	float:left;
+	float: left;
 	width: 50%;
-	color: whitesmoke;
+	color: white;
 	padding-left: 10px;
 }
+
 .form h2{
 	font-size: 23px;
 	font-weight: 300;
 }
+
 .form p{
 	font-size: 15px;
 	font-weight: 300;
 	max-width: 400px;
 	padding-right: 10px;
 }
+
 .form form{
-	margin-top: 15px;
+	margin-top:15px;
 }
+
 .form form input[type=text]{
-	width: 97%;
+	width: 90%;
 	max-width: 480px;
+	margin-top:8px;
 	height: 58px;
 	padding-left: 8px;
 	line-height: 58px;
-	border: 1px solid rgb(200,200,200);
-	margin-top: 8px;
+	border:1px solid rgb(200,200,200);
 }
+
 .form form textarea{
-	width: 97%;
+	width: 90%;
+	margin-top:8px;
 	max-width: 480px;
-	padding: 15px;
-	border: 1px solid rgb(200,200,200);
+	padding:15px;
+	border:1px solid rgb(200,200,200);
 	height: 160px;
-	margin-top: 8px;
 }
+
 .form form input[type=submit]{
+	border: 0;
 	background-color: #FF703D;
 	width: 165px;
 	height: 44px;
 	font-size: 13px;
-	color: whitesmoke;
+	color: white;
 	cursor: pointer;
-	margin-top: 30px;
-	text-align: center;
-	margin-top: 30px;
-	border: 0;
+	margin-top:15px;
 	border-radius: 30px;
 }
+
 .map-wraper{
 	float: left;
 	width: 50%;
-	padding: 0 10px;
-	color: whitesmoke;
+	padding:0 10px;
+	color: white;
 }
+
 .map-wraper h2{
 	font-size: 23px;
 	font-weight: 300;
 }
+
 .map-wraper3{
-	margin-top: 10px;
+	margin-top:10px;
 	width: 100%;
 	max-width: 480px;
 	position: relative;
 }
+
 .map-wraper2{
 	position: absolute;
 	left: 0;
-	top: 0;
+	top:0;
 	width: 100%;
-	padding-top: 100%;
+	padding-top:100%;
 }
+
 .map{
 	left: 0;
 	top: 0;
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-color: white;
-	border: 5px solid purple;
+	background: white;
+	border:5px solid rgb(200,200,200);
 }
-footer{
-	padding: 40px 2%;
-	background-color: #192123;
-	color: whitesmoke;
-	font-size: 14px;
 
+/***/
+
+
+footer{
+	padding:40px 2%;
+	background: #192123;
+	color: white;
 }
+
 footer p:nth-of-type(1){
 	float: left;
+	font-size: 14px;
 }
+
 footer p:nth-of-type(2){
 	float: right;
+	font-size: 14px;
 }
+
 @media screen and (max-width: 830px){
 
 	.chamada1{
@@ -441,119 +462,132 @@ footer p:nth-of-type(2){
 
 @media screen and (max-width: 768px){
 
-	header{
-		width: 100%;
-		height: auto;
-		min-height: 90vh;
-		padding:40px 2%;
-	}
-
-	nav.desktop-menu{
-		display:none;
-	}
-
-	nav.mobile-menu{
-		display: block;
-	}
-
-
-	section.sessao1{
-		padding:40px 2%;
-		height: auto;
-		text-align: center;
-	}
-
-	.sessao1 .container{
-		height: auto;
-	}
-
-
-	.texto-sessao1{
-		width: 100%;
-		margin-top:0;
-		padding-left: 0;
-		position: static; 
-		float: none;
-		display: inline-block;
-	}
-
-	.texto-sessao1 ul{
-		display: inline-block;
-		margin-top:20px;
-	}
-
-	.texto-sessao1 ul li{
-		float: none;
-		text-align: left;
-	}
-
-	.btn1-texto{
-		display: inline-block;
-	}
-
-	.device-sessao1{
-		display: none;
-	}
-
-	.sessao2{
-		padding-top: 40px;
+header{
+	width: 100%;
+	height: auto;
+	min-height: 90vh;
+	padding:40px 2%;
 }
+
+nav.desktop-menu{
+	display:none;
+}
+
+nav.mobile-menu{
+	display: block;
+}
+
+
+section.sessao1{
+	padding:40px 2%;
+	height: auto;
+	text-align: center;
+}
+
+.sessao1 .container{
+	height: auto;
+}
+
+
+.texto-sessao1{
+	width: 100%;
+	margin-top:0;
+	padding-left: 0;
+	position: static; 
+	float: none;
+	display: inline-block;
+}
+
+.texto-sessao1 ul{
+	display: inline-block;
+	margin-top:20px;
+}
+
+.texto-sessao1 ul li{
+	float: none;
+	text-align: left;
+}
+
+.btn1-texto{
+	display: inline-block;
+}
+
+.device-sessao1{
+	display: none;
+}
+
+.sessao2{
+	padding-top: 40px;
+}
+
 section.sessao4 .container{
 	text-align: center;
 }
+
 .form{
-	width: 100%;
 	float: none;
+	width: 100%;
 }
+
 .form p{
 	display: inline-block;
 	float: none;
 }
+
 .map-wraper{
-	width: 100%;
 	float: none;
-	padding: 0 4%;
-	margin-top: 40px;
+	width: 100%;
+	padding:0 8%;
+	margin-top:40px;
 }
+
+
 .map-wraper3{
-	margin-top: 10px;
-	width: 80%;
-	padding-top: 80%;
+	margin-top:10px;
+	width: 100%;
+	padding-top: 100%;
 	display: inline-block;
 	max-width: none;
 	position: relative;
 }
+
 .map-wraper2{
 	position: absolute;
 	left: 0;
-	top: 0;
+	top:0;
 	width: 100%;
 	height: 100%;
-	padding-top: 0;
+	padding-top:0;
 }
+
 }
-@media screen and (max-width: 580px) {
+
+@media screen and (max-width: 580px){
 	.part1{
 		width: 100%;
-		padding: 40px 0;
+		padding:40px 0;
 	}
+
 	.part2{
-		widht: 100%;
-		padding: 40px 0;
+		width: 100%;
+		padding:40px 0;
 	}
+
 	.sessao2 img{
 		top: 16px;
-		margin-top: 20px;
+		margin-top:20px;
 	}
+
 	footer{
 		text-align: center;
-	
 	}
+
 	footer p:nth-of-type(1){
-		float: none;
+	    float: none;
 	}
+
 	footer p:nth-of-type(2){
 		float: none;
-		margin-top: 8px;
+		margin-top:8px;
 	}
 }
